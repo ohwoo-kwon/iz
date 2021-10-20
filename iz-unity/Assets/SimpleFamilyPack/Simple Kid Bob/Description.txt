@@ -1,0 +1,4 @@
+It's a low poly model which is set for high customization and Unity Humanoid animations so it can be easily used as a character with animations you want or you can use MIXAMO to animate and import animations you want. 
+Model uses single texture to avoid excessive draw calls and 1 extra texture for glasses lense. 
+
+PSD set for an easy specific color change (Located in Source Files Folder)
