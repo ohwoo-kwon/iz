@@ -6,10 +6,6 @@ pipeline {
 				echo "${WORKSPACE}"
             }
         }
-        stage("Deploy") {
-            steps {
-            }
-        }
     }
 }
 
