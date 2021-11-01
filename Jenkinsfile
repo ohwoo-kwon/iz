@@ -3,10 +3,11 @@ pipeline {
      stages {
         stage("Build") {
             steps {
-				sh "sudo -i"
-				sh "cd ${WORKSPACE}/FE/izprj-app"
-				sh "npm install"
-				sh "npm run build"
+				sh script:'''
+					sudo cd ${WORKSPACE}/FE/izprj-app
+					sudo npm install
+					sudo npm run build
+				'''
             }
         }
 		stage("Deploy") {
