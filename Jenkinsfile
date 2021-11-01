@@ -3,15 +3,11 @@ pipeline {
      stages {
         stage("Build") {
             steps {
-				sh "sudo cd FE/izprj-app"
-                sh "sudo npm install"
-                sh "sudo npm run build"
+				echo "${WORKSPACE}"
             }
         }
         stage("Deploy") {
             steps {
-                sh "sudo rm -rf /var/www/jenkins-react-app"
-                sh "sudo cp -r ${WORKSPACE}/build/ /var/www/jenkins-react-app/"
             }
         }
     }
