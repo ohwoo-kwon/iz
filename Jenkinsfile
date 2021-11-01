@@ -13,8 +13,8 @@ pipeline {
         }
 		stage("Deploy") {
 			steps {
-				sh "rm -rf /var/www/jenkins-react-app"
-				sh "cp -r ${WORKSPACE}/FE/izprj-app/build/ /var/www/jenkins-react-app/"
+				sh "sudo rm -rf /var/www/jenkins-react-app"
+				sh "sudo cp -r ${WORKSPACE}/FE/izprj-app/build/ /var/www/jenkins-react-app/"
 			}
 		}
     }
