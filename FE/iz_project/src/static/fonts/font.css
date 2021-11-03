@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "NanumSeA";
+  font-display: fallback;
+
+  src: url("./NanumSeA.ttf") format("truetype"), url("./NanumSeA.woff") format("woff"), url("./NanumSeA.eot?iefix") format("embedded-opentype");
+
+  font-weight: 400;
+  font-style: normal;
+}
