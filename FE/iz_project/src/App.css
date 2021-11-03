@@ -1,0 +1,273 @@
+.App {
+  overflow: scroll;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* background-color: #5683B6; */
+  z-index: 2;
+  text-align: center;
+}
+
+header > img {
+  margin-top: 20px;
+  height: 120px;
+  width: 120px;
+}
+
+.custom-shape-divider-top-1635830287 {
+  position: relative;
+  top: 5%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1635830287 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 147px;
+}
+
+.custom-shape-divider-top-1635830287 .shape-fill {
+  fill: #5683B6;
+}
+
+.App > .pjt_pur {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  background-color: #5683B6;
+}
+
+.App > .pjt_pur > .pjt_purpose {
+  position: relative;
+  top: 0;
+  height: 75vh;
+  width: 95%;
+  left: 5%;
+}
+
+.App > .pjt_pur > .pjt_purpose h1 {
+  font-family: "NanumSeA";
+  font-size: 4rem;
+}
+
+.App > .pjt_pur > .pjt_purpose p {
+  font-size: 1.3rem;
+}
+
+.App > .pjt_pur > .pjt_purpose > .pur_img_up > img {
+  width: 30%;
+  margin-right: 20px;
+}
+
+.App > .pjt_pur > .pjt_purpose > .pur_img_down > img {
+  width: 30%;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+.custom-shape-divider-top-1635908304 {
+  position: relative;
+  top: -5%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1635908304 svg {
+  position: relative;
+  display: block;
+  width: calc(126% + 1.3px);
+  height: 186px;
+}
+
+.custom-shape-divider-top-1635908304 .shape-fill {
+  fill: #5683B6;
+}
+
+.App > .pjt_childabuse {
+  position: relative;
+  top: 0%;
+  height: 225vh;
+  width: 95%;
+  left: 5%;
+}
+
+.App > .pjt_childabuse h1 {
+  font-family: "NanumSeA";
+  font-size: 4rem;
+}
+
+.App > .pjt_childabuse p {
+  font-size: 1.3rem;
+}
+
+.App > .pjt_childabuse > .child_graph {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.App > .pjt_childabuse > .child_graph img {
+  width: 60%;
+  margin-top: 20px
+}
+
+.App > .pjt_childabuse > .child_table {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.App > .pjt_childabuse > .child_table img {
+  width: 40%;
+  margin-top: 20px
+}
+
+.App > .pjt_childabuse > .graph_from {
+  text-align: end;
+  margin-right: 80px;
+}
+
+.App > .pjt_childabuse > .childabuse_raw {
+  text-align: center;
+}
+
+.App > .pjt_childabuse > .childabuse_raw p {
+  margin-top: 80px;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.App > .pjt_childabuse > .childabuse_raw h2 {
+  margin: 0 auto;
+  font-size: 4rem;
+}
+
+.App > .pjt_childabuse > .childabuse_raw h6 {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  font-size: 1.3rem;
+}
+
+.custom-shape-divider-bottom-1635915666 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1635915666 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 138px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1635915666 .shape-fill {
+  fill: #99B5D4;
+}
+
+.App > .whatisIz {
+  position: relative;
+  width: 100%;
+  height: 110vh;
+  top: -5%;
+  background-color: #99B5D4;
+}
+
+.App > .whatisIz > .Iz_report {
+  position: relative;
+  top: 10%;
+  height: 95vh;
+  width: 95%;
+  left: 5%;
+}
+
+.App > .whatisIz > .Iz_report h1 {
+  font-family: "NanumSeA";
+  font-size: 4rem;
+}
+
+.App > .whatisIz > .Iz_report p {
+  font-size: 1.3rem;
+}
+
+.App > .whatisIz > .Iz_report > .pur_img_up img {
+  width: 30%;
+  margin-right: 20px;
+}
+
+.App > .whatisIz > .Iz_report > .pur_img_down img {
+  width: 30%;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+.custom-shape-divider-top-1635920827 {
+  position: relative;
+  top: -5%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1635920827 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1635920827 .shape-fill {
+  fill: #99B5D4;
+}
+
+.App > .Iz_download {
+  position: relative;
+  top: 0%;
+  height: 50vh;
+  width: 95%;
+  left: 5%;
+}
+
+.App > .Iz_download h1 {
+  font-family: "NanumSeA";
+  font-size: 4rem;
+}
+
+.App > .Iz_download p {
+  font-size: 1.3rem;
+}
+
+.App > .Iz_download > .down_button {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.App > .Iz_download > .down_button Button {
+  height: 85px;
+  width: 200px;
+  font-size: 1.5rem;
+  background: rgb(11,247,173);
+  background: linear-gradient(90deg, rgba(11,247,173,1) 0%, rgba(21,169,224,1) 100%, rgba(0,255,231,1) 100%); 
+}
