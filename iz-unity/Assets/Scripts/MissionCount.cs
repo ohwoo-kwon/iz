@@ -21,23 +21,18 @@ public class MissionCount : MonoBehaviour
         if (this.flag)
         {
             setTimeCount();
-            setMissionMessage("집 안에서 아동학대에 사용된\n 물건들을 찾아주세요.");
+            gameObject.SetActive(true);
         }
         else
         {
             this.timeCount = 0f;
-            setMissionMessage(null);
+            gameObject.SetActive(false);
         }
     }
 
     void setFlag(bool flag)
     {
         this.flag = flag;
-    }
-
-    void setMissionMessage(string msg)
-    {
-        this.missionMessage.text = msg;
     }
 
     void setTimeCount()
