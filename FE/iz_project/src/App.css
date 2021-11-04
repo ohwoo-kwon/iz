@@ -1,6 +1,8 @@
+body {
+  margin: 0;
+}
+
 .App {
-  overflow: scroll;
-  width: 100%;
   height: 100vh;
 }
 
@@ -10,7 +12,6 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  /* background-color: #5683B6; */
   z-index: 2;
   text-align: center;
 }
@@ -23,7 +24,7 @@ header > img {
 
 .custom-shape-divider-top-1635830287 {
   position: relative;
-  top: 5%;
+  top: 6.2%;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -64,6 +65,7 @@ header > img {
 }
 
 .App > .pjt_pur > .pjt_purpose p {
+  font-family: 'Gothic A1', sans-serif;
   font-size: 1.3rem;
 }
 
@@ -102,7 +104,7 @@ header > img {
 .App > .pjt_childabuse {
   position: relative;
   top: 0%;
-  height: 225vh;
+  /* height: 225vh; */
   width: 95%;
   left: 5%;
 }
@@ -113,6 +115,7 @@ header > img {
 }
 
 .App > .pjt_childabuse p {
+  font-family: 'Gothic A1', sans-serif;  
   font-size: 1.3rem;
 }
 
@@ -148,17 +151,20 @@ header > img {
 }
 
 .App > .pjt_childabuse > .childabuse_raw p {
+  font-family: 'Gothic A1', sans-serif;  
   margin-top: 80px;
   margin-bottom: 0;
   font-size: 2rem;
 }
 
 .App > .pjt_childabuse > .childabuse_raw h2 {
-  margin: 0 auto;
+  font-family: 'Gothic A1', sans-serif;  
+  margin-top: 20px;
   font-size: 4rem;
 }
 
 .App > .pjt_childabuse > .childabuse_raw h6 {
+  font-family: 'Gothic A1', sans-serif;  
   margin-top: 20px;
   margin-bottom: 80px;
   font-size: 1.3rem;
@@ -189,15 +195,15 @@ header > img {
 .App > .whatisIz {
   position: relative;
   width: 100%;
-  height: 110vh;
-  top: -5%;
+  height: 120vh;
+  top: -6.2%;
   background-color: #99B5D4;
 }
 
 .App > .whatisIz > .Iz_report {
   position: relative;
   top: 10%;
-  height: 95vh;
+  /* height: 95vh; */
   width: 95%;
   left: 5%;
 }
@@ -208,6 +214,7 @@ header > img {
 }
 
 .App > .whatisIz > .Iz_report p {
+  font-family: 'Gothic A1', sans-serif;  
   font-size: 1.3rem;
 }
 
@@ -224,7 +231,7 @@ header > img {
 
 .custom-shape-divider-top-1635920827 {
   position: relative;
-  top: -5%;
+  top: -6.3%;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -256,6 +263,7 @@ header > img {
 }
 
 .App > .Iz_download p {
+  font-family: 'Gothic A1', sans-serif;  
   font-size: 1.3rem;
 }
 
