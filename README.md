@@ -1,4 +1,4 @@
-![iz logo](README.assets/iz logo.png)
+![iz-logo](README.assets/iz-logo.png)
 
 # 아이즈[iz]
 
@@ -42,9 +42,9 @@
 
 ##### 		1.1.2 법안 개정
 
-![Image Pasted at 2021-10-22 10-26](README.assets/Image Pasted at 2021-10-22 10-26.png)
+![Image-Pasted-at-2021-10-22-10-26](README.assets/Image-Pasted-at-2021-10-22-10-26.png)
 
-![Image Pasted at 2021-10-22 10-27](README.assets/Image Pasted at 2021-10-22 10-27.png)
+![Image-Pasted-at-2021-10-22-10-27](README.assets/Image-Pasted-at-2021-10-22-10-27.png)
 
 ​	최근에 있었던 안타까운 아동학대 사건들 이후로 2021년 7월 24일 '영유아 보육법 개정안'이 통과되었습니다. 이를 통해 그동안 제대로 이루어지지 않았던 아	동학대 예방 교육이 법을 통하여 시행될 수 있게 되었습니다.
 
@@ -52,7 +52,7 @@
 
 ### 1.2 로고
 
-![iz logo](README.assets/iz logo.png)
+![iz-logo](README.assets/iz-logo.png)
 
 - 아이(i)
   - 알파벳 **i** 와 한글 **아이**를 의미하는 이중적 표현
