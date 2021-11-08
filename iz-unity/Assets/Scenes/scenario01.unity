@@ -12938,7 +12938,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uCC3E\uC740 \uB2E8\uC11C:  1 / 5"
+  m_text: "\uCC3E\uC740 \uBB3C\uAC74:  0 / 5"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6fc679bf128d6034885c1ac07d719585, type: 2}
   m_sharedMaterial: {fileID: 5945446916066186108, guid: 6fc679bf128d6034885c1ac07d719585, type: 2}
