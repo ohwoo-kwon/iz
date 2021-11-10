@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Clue
+  - Submit
+  - Cancel
+  - Text
   layers:
   - Default
   - TransparentFX
