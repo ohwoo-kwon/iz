@@ -14,4 +14,14 @@ public class SceneMove : MonoBehaviour
             SceneManager.LoadScene("scenario01");
         }
     }
+
+    public void MoveToEndingCredit()
+    {
+        SceneManager.LoadScene("endingcredit");
+    }
+
+    public void MoveToCity()
+    {
+        SceneManager.LoadScene("City");
+    }
 }
