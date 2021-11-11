@@ -13,6 +13,7 @@ TagManager:
   - bath
   - diary
   - door
+  - chair
   layers:
   - Default
   - TransparentFX

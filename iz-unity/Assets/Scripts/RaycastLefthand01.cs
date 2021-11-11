@@ -13,7 +13,6 @@ public class RaycastLefthand01 : MonoBehaviour
 
     private HashSet<string> picked = new HashSet<string>();
     public float raycastDistance = 100f; // 레이저 포인터 감지 거리
-    public bool flag = false;
 
     private RaycastLefthand01()
     {
@@ -68,29 +67,14 @@ public class RaycastLefthand01 : MonoBehaviour
                 {
                     Debug.Log("선택");
                     string tagName = Collided_object.collider.gameObject.transform.Find("Canvas").gameObject.tag;
-                    if (!flag)
+                    if (instance.picked.Contains(tagName))
                     {
-                        if (instance.picked.Contains(tagName))
-                        {
-                            Collided_object.collider.gameObject.transform.Find("Complete").gameObject.SetActive(true);
-                        }
-                        else
-                        {
-                            Collided_object.collider.gameObject.transform.Find("Canvas").gameObject.SetActive(true);
-                        }
+                        Collided_object.collider.gameObject.transform.Find("Complete").gameObject.SetActive(true);
                     }
                     else
                     {
-                        if (instance.picked.Contains(tagName))
-                        {
-                            Collided_object.collider.gameObject.transform.Find("Complete").gameObject.SetActive(false);
-                        }
-                        else
-                        {
-                            Collided_object.collider.gameObject.transform.Find("Canvas").gameObject.SetActive(false);
-                        }
+                        Collided_object.collider.gameObject.transform.Find("Canvas").gameObject.SetActive(true);
                     }
-                    flag = !flag;
                 }
 
                 else

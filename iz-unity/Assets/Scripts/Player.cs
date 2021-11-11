@@ -6,12 +6,12 @@ using TMPro;
 public class Player : MonoBehaviour
 {
     private RaycastLefthand01 raycastLefthand;
-    public const int MAXCOUNT = 5;
+    public const int MAXCOUNT = 6;
     public TextMeshProUGUI missionMessage;
     public TextMeshProUGUI findClue;
     public GameObject targetLocation;
     
-    public string[] tags = { "tv", "bat", "dish", "bath", "diary" };
+    public string[] tags = { "tv", "bat", "dish", "bath", "diary", "chair" };
     public int life = 5;
     public int count = 0;
 
@@ -58,8 +58,9 @@ public class Player : MonoBehaviour
     {
         print("еб╠в: " + findTag);
         bool flag = false;
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < MAXCOUNT; i++)
         {
+            print(tags[i]);
             if (this.tags[i] == findTag)
             {
                 flag = true;
