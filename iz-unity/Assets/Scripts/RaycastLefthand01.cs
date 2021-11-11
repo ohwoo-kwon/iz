@@ -6,12 +6,29 @@ using TMPro;
 
 public class RaycastLefthand01 : MonoBehaviour
 {
+    private static RaycastLefthand01 instance = new RaycastLefthand01();
     private LineRenderer layser;        // 레이저
     private RaycastHit Collided_object; // 충돌된 객체
     private GameObject currentObject;   // 가장 최근에 충돌한 객체를 저장하기 위한 객체
 
+    private HashSet<string> picked = new HashSet<string>();
     public float raycastDistance = 100f; // 레이저 포인터 감지 거리
     public bool flag = false;
+
+    private RaycastLefthand01()
+    {
+
+    }
+
+    public static RaycastLefthand01 getInstance()
+    {
+        return instance;
+    }
+
+    public void addPicked(string tagName)
+    {
+        instance.picked.Add(tagName);
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -50,13 +67,28 @@ public class RaycastLefthand01 : MonoBehaviour
                 if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
                 {
                     Debug.Log("선택");
+                    string tagName = Collided_object.collider.gameObject.transform.Find("Canvas").gameObject.tag;
                     if (!flag)
                     {
-                        Collided_object.collider.gameObject.transform.Find("Canvas").gameObject.SetActive(true);
+                        if (instance.picked.Contains(tagName))
+                        {
+                            Collided_object.collider.gameObject.transform.Find("Complete").gameObject.SetActive(true);
+                        }
+                        else
+                        {
+                            Collided_object.collider.gameObject.transform.Find("Canvas").gameObject.SetActive(true);
+                        }
                     }
                     else
                     {
-                        Collided_object.collider.gameObject.transform.Find("Canvas").gameObject.SetActive(false);
+                        if (instance.picked.Contains(tagName))
+                        {
+                            Collided_object.collider.gameObject.transform.Find("Complete").gameObject.SetActive(false);
+                        }
+                        else
+                        {
+                            Collided_object.collider.gameObject.transform.Find("Canvas").gameObject.SetActive(false);
+                        }
                     }
                     flag = !flag;
                 }
@@ -65,17 +97,6 @@ public class RaycastLefthand01 : MonoBehaviour
                 {
                     currentObject = Collided_object.collider.gameObject;
                 }
-                //TextMeshProUGUI text = Collided_object.collider.gameObject.transform.GetComponent<TextMeshProUGUI>();
-                //text.color = Color.blue;
-            }
-            else
-            {
-                /*
-                if(currentObject != null)
-                {
-                    currentObject.transform.Find("Canvas").gameObject.SetActive(false);
-                }
-                */
             }
         }
 
