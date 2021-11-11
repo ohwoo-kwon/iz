@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     public const int MAXCOUNT = 5;
     public TextMeshProUGUI missionMessage;
     public TextMeshProUGUI findClue;
+    public GameObject targetLocation;
+    
     public string[] tags = { "tv", "bat", "dish", "bath", "diary" };
     public int life = 5;
     public int count = 0;
@@ -20,12 +22,12 @@ public class Player : MonoBehaviour
 
     void changeMissionMessage()
     {
-        this.missionMessage.text = "모든 단서를 찾았습니다.\n아이의 방으로 이동해주세요.";
+        this.missionMessage.text = "모든 단서를 찾았습니다.\n포탈을 통해 아이의 방으로\n이동해주세요.";
     }
 
     void changeFindClue()
     {
-        this.findClue.text = "찾은 물건: " + this.count + " / " + MAXCOUNT;
+        this.findClue.text = "찾은 단서: " + this.count + " / " + MAXCOUNT;
     }
 
     void fakeClue(string tagName)
@@ -44,10 +46,11 @@ public class Player : MonoBehaviour
 
         this.count++;
         changeFindClue();
-        // 카운트가 MAX이면 missionMessage 변경
+        // 카운트가 MAX이면 missionMessage 변경, targetLocation 활성화
         if (this.count == MAXCOUNT)
         {
             changeMissionMessage();
+            targetLocation.SetActive(true);
         }
     }
 
