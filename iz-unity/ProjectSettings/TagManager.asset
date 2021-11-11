@@ -12,6 +12,7 @@ TagManager:
   - dish
   - bath
   - diary
+  - door
   layers:
   - Default
   - TransparentFX
