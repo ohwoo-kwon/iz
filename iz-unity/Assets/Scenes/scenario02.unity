@@ -1402,7 +1402,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 969050416}
-  m_RootOrder: 11
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &120229213 stripped
 GameObject:
@@ -2169,7 +2169,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: ea1428cc96e182b4b936fa103f1b6a46, type: 3}
+  m_Texture: {fileID: 2800000, guid: 3dfb6e0cc49a3224b9ed427c4507ac31, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -8407,6 +8407,7 @@ Transform:
   - {fileID: 289258731}
   - {fileID: 1860203607}
   - {fileID: 1013783928}
+  - {fileID: 101337810}
   - {fileID: 90223240}
   - {fileID: 985049417}
   - {fileID: 157359346}
@@ -8415,7 +8416,6 @@ Transform:
   - {fileID: 1371617015}
   - {fileID: 1637624830}
   - {fileID: 1304054284}
-  - {fileID: 101337810}
   - {fileID: 65128034}
   - {fileID: 360813496}
   - {fileID: 1008815241}
