@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Clue
+  - Submit
+  - Cancel
+  - tv
+  - bat
+  - dish
+  - bath
+  - diary
   layers:
   - Default
   - TransparentFX

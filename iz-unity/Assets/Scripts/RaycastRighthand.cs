@@ -47,7 +47,7 @@ public class RaycastRighthand : MonoBehaviour
                 // 오큘러스 고 리모콘에 큰 동그라미 부분을 누를 경우
                 if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
                 {
-                    Debug.Log("선택");
+                    Collided_object.collider.gameObject.transform.Find("Canvas").gameObject.SetActive(true);
                 }
 
                 else
