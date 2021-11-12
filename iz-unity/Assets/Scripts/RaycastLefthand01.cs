@@ -6,32 +6,19 @@ using TMPro;
 
 public class RaycastLefthand01 : MonoBehaviour
 {
-    private static RaycastLefthand01 instance = new RaycastLefthand01();
+    private Player player;
     private LineRenderer layser;        // 레이저
     private RaycastHit Collided_object; // 충돌된 객체
     private GameObject currentObject;   // 가장 최근에 충돌한 객체를 저장하기 위한 객체
 
-    private HashSet<string> picked = new HashSet<string>();
+
     public float raycastDistance = 100f; // 레이저 포인터 감지 거리
-
-    private RaycastLefthand01()
-    {
-
-    }
-
-    public static RaycastLefthand01 getInstance()
-    {
-        return instance;
-    }
-
-    public void addPicked(string tagName)
-    {
-        instance.picked.Add(tagName);
-    }
 
     // Start is called before the first frame update
     void Start()
     {
+        player = Player.getInstance();
+
         // 스크립트가 포함된 객체에 라인 렌더러라는 컴포넌트를 넣고있다.
         layser = this.gameObject.AddComponent<LineRenderer>();
 
@@ -65,9 +52,9 @@ public class RaycastLefthand01 : MonoBehaviour
                 // 오큘러스 고 리모콘에 큰 동그라미 부분을 누를 경우
                 if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
                 {
-                    Debug.Log("선택");
+                    Debug.Log("left 선택");
                     string tagName = Collided_object.collider.gameObject.transform.Find("Canvas").gameObject.tag;
-                    if (instance.picked.Contains(tagName))
+                    if (player.containsPicked(tagName))
                     {
                         Collided_object.collider.gameObject.transform.Find("Complete").gameObject.SetActive(true);
                     }
