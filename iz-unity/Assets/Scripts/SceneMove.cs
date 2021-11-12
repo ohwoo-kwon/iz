@@ -24,4 +24,9 @@ public class SceneMove : MonoBehaviour
     {
         SceneManager.LoadScene("City");
     }
+
+    public void MoveToScenario02()
+    {
+        SceneManager.LoadScene("scenario02");
+    }
 }
