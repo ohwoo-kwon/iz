@@ -5,7 +5,9 @@ using TMPro;
 
 public class Player : MonoBehaviour
 {
-    private RaycastLefthand01 raycastLefthand;
+    private static Player instance = new Player();
+    private HashSet<string> picked = new HashSet<string>();
+
     public const int MAXCOUNT = 6;
     public TextMeshProUGUI missionMessage;
     public TextMeshProUGUI findClue;
@@ -15,9 +17,21 @@ public class Player : MonoBehaviour
     public int life = 5;
     public int count = 0;
 
-    void Start()
+    private Player() { }
+
+    public static Player getInstance()
     {
-        raycastLefthand = RaycastLefthand01.getInstance();
+        return instance;
+    }
+
+    public void addPicked(string tagName)
+    {
+        instance.picked.Add(tagName);
+    }
+
+    public bool containsPicked(string tagName)
+    {
+        return instance.picked.Contains(tagName);
     }
 
     void changeMissionMessage()
@@ -67,7 +81,7 @@ public class Player : MonoBehaviour
                 break;
             }
         }
-        raycastLefthand.addPicked(findTag);
+        instance.addPicked(findTag);
 
         return flag;
     }
