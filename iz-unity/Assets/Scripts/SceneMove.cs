@@ -29,4 +29,14 @@ public class SceneMove : MonoBehaviour
     {
         SceneManager.LoadScene("scenario02");
     }
+
+    public void MoveToHome()
+    {
+        SceneManager.LoadScene("Home");
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
