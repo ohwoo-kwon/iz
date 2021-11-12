@@ -69,6 +69,15 @@ public class RaycastLefthand01 : MonoBehaviour
                     currentObject = Collided_object.collider.gameObject;
                 }
             }
+            else if (Collided_object.collider.gameObject.CompareTag("child"))
+            {
+                layser.material.color = new Color(0, 0, 0, 0.5f);
+                // 오큘러스 고 리모콘에 큰 동그라미 부분을 누를 경우
+                if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
+                {
+                    Collided_object.collider.gameObject.transform.Find("Canvas").gameObject.SetActive(true);
+                }
+            }
         }
 
         else

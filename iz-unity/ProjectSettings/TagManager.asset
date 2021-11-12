@@ -14,6 +14,7 @@ TagManager:
   - diary
   - door
   - chair
+  - child
   layers:
   - Default
   - TransparentFX

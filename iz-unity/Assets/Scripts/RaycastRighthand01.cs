@@ -42,6 +42,7 @@ public class RaycastRighthand01 : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.forward, out Collided_object, raycastDistance))
         {
             layser.SetPosition(1, Collided_object.point);
+            print("???: " + Collided_object.collider.gameObject.tag);
 
             // 충돌 객체의 태그가 Button인 경우
             if (Collided_object.collider.gameObject.CompareTag("Clue"))
@@ -65,6 +66,16 @@ public class RaycastRighthand01 : MonoBehaviour
                 else
                 {
                     currentObject = Collided_object.collider.gameObject;
+                }
+            }
+            else if (Collided_object.collider.gameObject.CompareTag("child"))
+            {
+                layser.material.color = new Color(0, 0, 0, 0.5f);
+                // 오큘러스 고 리모콘에 큰 동그라미 부분을 누를 경우
+                if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
+                {
+                    print("asdf");
+                    Collided_object.collider.gameObject.transform.Find("Canvas").gameObject.SetActive(true);
                 }
             }
         }
